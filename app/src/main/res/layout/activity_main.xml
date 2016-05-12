@@ -72,7 +72,7 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="none|numberDecimal"
+            android:inputType="none"
             android:ems="10"
             android:id="@+id/input6Piece"
             android:layout_row="2"
@@ -91,7 +91,7 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="none|numberDecimal"
+            android:inputType="none"
             android:ems="10"
             android:id="@+id/input10Piece"
             android:layout_row="3"
@@ -110,7 +110,7 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="none|numberDecimal"
+            android:inputType="none"
             android:ems="10"
             android:id="@+id/input20Piece"
             android:layout_row="4"
@@ -129,7 +129,7 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="none|numberDecimal"
+            android:inputType="none"
             android:ems="10"
             android:id="@+id/input40Piece"
             android:layout_row="5"
@@ -148,12 +148,12 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="numberDecimal"
             android:ems="10"
             android:id="@+id/inputCalories"
             android:layout_row="6"
             android:layout_column="1"
-            android:hint="Ignore This Number" />
+            android:hint="Ignore This Number"
+            android:inputType="none" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -167,7 +167,7 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="none|numberDecimal"
+            android:inputType="none"
             android:ems="10"
             android:id="@+id/inputHappiness"
             android:layout_row="11"
@@ -185,14 +185,16 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:inputType="none|numberDecimal"
+            android:inputType="none"
             android:ems="10"
             android:id="@+id/input4Piece"
             android:layout_row="0"
             android:layout_column="1"
             android:hint="Number of Nuggets"
             android:editable="false"
-            android:clickable="false" />
+            android:clickable="false"
+            android:focusable="false"
+            android:enabled="true" />
 
         <EditText
             android:layout_width="wrap_content"

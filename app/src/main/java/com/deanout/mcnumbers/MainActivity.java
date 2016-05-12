@@ -3,17 +3,13 @@ package com.deanout.mcnumbers;
 import android.app.Activity;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.EditText;
-
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import java.util.Timer;
-import java.util.TimerTask;
 
 public class MainActivity extends Activity {
     private EditText input;
@@ -55,6 +51,16 @@ public class MainActivity extends Activity {
         input4Piece = (EditText) findViewById(R.id.input4Piece);
         inputCalories = (EditText) findViewById(R.id.inputCalories);
         inputHappiness = (EditText) findViewById(R.id.inputHappiness);
+
+
+        total.setFocusable(false);
+        input40Piece.setFocusable(false);
+        input20Piece.setFocusable(false);
+        input10Piece.setFocusable(false);
+        input6Piece.setFocusable(false);
+        input40Piece.setFocusable(false);
+        inputCalories.setFocusable(false);
+        inputHappiness.setFocusable(false);
 
         input.addTextChangedListener(new TextWatcher() {
             @Override
